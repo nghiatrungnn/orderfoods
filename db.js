@@ -1,10 +1,7 @@
-const mongoose = require('mongoose');
-const uri = "mongodb+srv://trung:<123>@cluster1.8ltwg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+// const mongoose = require('mongoose');
+// const config = require('../config/config'); // Đảm bảo đường dẫn đúng
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log("Kết nối đến MongoDB thành công!");
-  })
-  .catch(err => {
-    console.error("Kết nối đến MongoDB thất bại:", err);
-  });
+// // Kết nối đến MongoDB
+// mongoose.connect(config.database.uri)
+//   .then(() => console.log('Kết nối MongoDB thành công'))
+//   .catch(err => console.error('Lỗi kết nối MongoDB:', err));

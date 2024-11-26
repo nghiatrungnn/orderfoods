@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const config = require('../config/config');
 
-// Kết nối đến MongoDB
-mongoose.connect(config.database.uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Kết nối MongoDB thành công'))
-  .catch(err => console.error('Lỗi kết nối MongoDB:', err));
+// // Kết nối đến MongoDB
+// mongoose.connect(config.database.uri, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => console.log('Kết nối MongoDB thành công'))
+//   .catch(err => console.error('Lỗi kết nối MongoDB:', err));
 
 // Định nghĩa schema cho Order
 const orderSchema = new mongoose.Schema({
